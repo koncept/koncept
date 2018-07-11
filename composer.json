@@ -1,0 +1,16 @@
+{
+    "name": "koncept/koncept",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Showsay You",
+            "email": "4kizuki.c10.l65@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    }
+}
