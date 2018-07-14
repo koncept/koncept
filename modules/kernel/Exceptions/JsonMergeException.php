@@ -27,7 +27,7 @@ class JsonMergeException
     {
         $type = self::GetType($actualValue);
         return new self (
-            "The type of {$key} in the first JSON is {$expectedType} while that in the second JSON is {$type}"
+            "The type of field \"{$key}\" in the first JSON is {$expectedType} while that in the second JSON is {$type}"
         );
     }
 
