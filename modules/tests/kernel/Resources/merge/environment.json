@@ -1,0 +1,15 @@
+{
+    "scalar": 4,
+    "array": [
+        "f"
+    ],
+    "object": {
+        "scalar": 3,
+        "array": [
+            "n"
+        ],
+        "object": {
+            "scalar": 7
+        }
+    }
+}
