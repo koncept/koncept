@@ -1,0 +1,8 @@
+{
+    "secure": {
+        "cryptKey": "6I01U{][Cat#s`@NYwp+W)[&g7Kn]dD{vr?&#L83KX'CyyoDnYVM]\"oz3Q>R*MN}0Gu7j6Z%]!#L\"10cZO;ROK0<#rK%i3OX)*3W^[{e`o%[^XGoBTq'_rb1mk}#6yII"
+    },
+    "monolog": {
+        "activate": "warning"
+    }
+}
