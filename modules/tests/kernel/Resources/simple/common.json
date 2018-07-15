@@ -1,0 +1,12 @@
+{
+    "server": {
+        "scheme": "http",
+        "host": "localhost",
+        "port": 80,
+        "path": "/"
+    },
+    "monolog": {
+        "directory": "./log",
+        "activate": "debug"
+    }
+}

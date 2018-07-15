@@ -1,0 +1,16 @@
+{
+    "kept": 4.2,
+    "scalar": 3,
+    "array": [
+        "g"
+    ],
+    "object": {
+        "kept": 5,
+        "scalar": 3,
+        "array": [
+            "g"
+        ],
+        "object": {
+        }
+    }
+}

@@ -8,6 +8,7 @@
     <testsuites>
         <testsuite name="All Tests">
             <directory>./tests/</directory>
+            <directory>./modules/tests/kernel</directory>
         </testsuite>
     </testsuites>
     <filter>
