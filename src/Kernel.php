@@ -5,7 +5,6 @@ namespace Application;
 use Koncept\DI\TypeMapInterface;
 use Koncept\DI\Utility\AggregateTypeMap;
 use Koncept\DI\Utility\Container;
-use Koncept\DI\Utility\RecursiveFactory;
 use Koncept\Kernel\Config\ConfigFactory;
 use Koncept\Kernel\KernelInterface;
 use Koncept\Kernel\Logic\LogicFactory;
@@ -53,7 +52,7 @@ class Kernel
 
         $injection = (new AggregateTypeMap(
             $configFactory,
-            new class($configFactory) extends RecursiveFactory
+            new class($configFactory) extends Container
             {
                 // use MySQL;
             },
