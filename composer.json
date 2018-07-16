@@ -16,12 +16,14 @@
     },
     "autoload": {
         "psr-4": {
+            "Koncept\\Web\\": "modules/web",
             "Koncept\\Kernel\\": "modules/kernel",
             "Application\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "Koncept\\Web\\Tests\\": "modules/tests/web",
             "Koncept\\Kernel\\Tests\\": "modules/tests/kernel",
             "Test\\": "tests/"
         }
