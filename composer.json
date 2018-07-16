@@ -16,6 +16,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Koncept\\Request\\": "modules/request",
             "Koncept\\Web\\": "modules/web",
             "Koncept\\Kernel\\": "modules/kernel",
             "Application\\": "src/"
@@ -23,6 +24,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Koncept\\Request\\Tests\\": "modules/tests/request",
             "Koncept\\Web\\Tests\\": "modules/tests/web",
             "Koncept\\Kernel\\Tests\\": "modules/tests/kernel",
             "Test\\": "tests/"

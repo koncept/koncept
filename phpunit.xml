@@ -10,6 +10,7 @@
             <directory>./tests/</directory>
             <directory>./modules/tests/kernel</directory>
             <directory>./modules/tests/web</directory>
+            <directory>./modules/tests/request</directory>
         </testsuite>
     </testsuites>
     <filter>
