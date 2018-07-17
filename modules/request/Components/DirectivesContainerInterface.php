@@ -15,7 +15,7 @@ use IteratorAggregate;
  * @package koncept/request
  * @since v1.0.0
  */
-interface DirectiveContainerInterface
+interface DirectivesContainerInterface
     extends ArrayAccess, Countable, IteratorAggregate
 {
     /**

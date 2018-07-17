@@ -13,7 +13,7 @@ use Iterator;
  * @package koncept/request
  * @since v1.0.0
  */
-interface DirectiveIteratorInterface
+interface DirectivesIteratorInterface
     extends Iterator
 {
     /**
