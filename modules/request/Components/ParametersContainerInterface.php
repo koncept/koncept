@@ -8,25 +8,25 @@ use IteratorAggregate;
 
 
 /**
- * [Interface] Container of Query Parameters
+ * [Interface] Container of Parameters
  *
  * @author Showsay You <akizuki.c10.l65@gmail.com>
  * @copyright 2018 Koncept. All Rights Reserved.
  * @package koncept/request
  * @since v1.0.0
  */
-interface QueryParametersContainerInterface
+interface ParametersContainerInterface
     extends ArrayAccess, Countable, IteratorAggregate
 {
     /**
      * Retrieve an external iterator
      * @link http://php.net/manual/en/iteratoraggregate.getiterator.php
      *
-     * @return QueryParametersIteratorInterface
+     * @return ParametersIteratorInterface
      *
      * @internal
      */
-    public function getIterator(): QueryParametersIteratorInterface;
+    public function getIterator(): ParametersIteratorInterface;
 
     /**
      * Whether a offset exists

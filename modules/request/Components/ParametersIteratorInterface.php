@@ -6,14 +6,14 @@ use Iterator;
 
 
 /**
- * [Interface] Iterator of Query Parameters
+ * [Interface] Iterator of Parameters
  *
  * @author Showsay You <akizuki.c10.l65@gmail.com>
  * @copyright 2018 Koncept. All Rights Reserved.
  * @package koncept/request
  * @since v1.0.0
  */
-interface QueryParametersIteratorInterface
+interface ParametersIteratorInterface
     extends Iterator
 {
     /**
