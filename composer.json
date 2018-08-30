@@ -9,6 +9,8 @@
     ],
     "require": {
         "php": "^7.2",
+        "strictphp/property": "^2.1",
+        "strictphp/collection": "^1.3",
         "koncept/dependency-injection": "^1.1"
     },
     "require-dev": {
