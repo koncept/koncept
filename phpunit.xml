@@ -8,11 +8,13 @@
     <testsuites>
         <testsuite name="All Tests">
             <directory>./tests/</directory>
+            <directory>./modules/http/tests/</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist>
             <directory>./src/</directory>
+            <directory>./modules/http/src/</directory>
         </whitelist>
     </filter>
     <logging>
