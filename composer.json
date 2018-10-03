@@ -15,12 +15,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Koncept\\Koncept\\": "src/"
+            "Koncept\\Koncept\\": "src/",
+            "Koncept\\HTTP\\": "modules/http/src/",
+            "Koncept\\Collection\\": "modules/collection/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Koncept\\Tests\\Koncept\\": "tests/"
+            "Koncept\\Tests\\Koncept\\": "tests/",
+            "Koncept\\Tests\\HTTP\\": "modules/http/tests/",
+            "Koncept\\Tests\\Collection\\": "modules/collection/tests/"
         }
     }
 }
