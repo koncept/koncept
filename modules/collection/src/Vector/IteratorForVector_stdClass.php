@@ -1,26 +1,27 @@
 <?php declare(strict_types=1);
 
-namespace Koncept\Collection\Map\String;
+namespace Koncept\Collection\Vector;
 
 use ArrayIterator;
 use Iterator;
 use Koncept\Collection\Common\Exceptions\InvalidIteratorOperationException;
+use stdClass as T;
 
 
 /**
- * [Class] Iterator for StringMap <string>
+ * [Class] Iterator for Vector <stdClass>
  *
  * @package koncept/collection
  * @author Showsay You <4kizuki@h4dz.io>
  * @copyright 2018 Koncept
  */
-class IteratorForStringMap_string implements Iterator
+class IteratorForVector_stdClass implements Iterator
 {
     /** @var ArrayIterator */
     private $delegate;
 
     /**
-     * IteratorForStringMap_string constructor.
+     *IteratorForVector_T constructor.
      *
      * @param array $data
      */
@@ -32,9 +33,9 @@ class IteratorForStringMap_string implements Iterator
     /**
      * Return the current element.
      *
-     * @return string
+     * @return T
      */
-    public function current(): string
+    public function current(): T
     {
         if ($this->valid()) return $this->delegate->current();
         throw new InvalidIteratorOperationException;
@@ -54,11 +55,11 @@ class IteratorForStringMap_string implements Iterator
     /**
      * Return the key of the current element.
      *
-     * @return string
+     * @return int
      */
-    public function key(): string
+    public function key(): int
     {
-        if ($this->valid()) return (string)$this->delegate->key();
+        if ($this->valid()) return (int)$this->delegate->key();
         throw new InvalidIteratorOperationException;
     }
 

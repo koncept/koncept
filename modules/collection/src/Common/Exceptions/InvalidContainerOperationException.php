@@ -2,15 +2,17 @@
 
 namespace Koncept\Collection\Common\Exceptions;
 
+use LogicException;
+
 
 /**
- * [Unchecked Exception] Push Operation is Denied
+ * [Unchecked Exception] Invalid Container Operation
  *
  * @package koncept/collection
  * @author Showsay You <4kizuki@h4dz.io>
  * @copyright 2018 Koncept
  */
-class PushDeniedException extends InvalidContainerOperationException
+class InvalidContainerOperationException extends LogicException
 {
 
 }

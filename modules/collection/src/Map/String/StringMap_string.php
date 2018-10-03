@@ -30,7 +30,10 @@ class StringMap_string implements ArrayAccess, IteratorAggregate
     public function __construct(array $input)
     {
         $d = [];
-        foreach ($input as $key => $value) if (is_string($value)) $d[$key] = $value;
+        foreach ($input as $key => $value) {
+            if (is_string($value)) $d[$key] = $value;
+            else throw new TypeError(self::ValueTypeErrorMessage());
+        }
         $this->data = $d;
     }
 
@@ -128,7 +131,7 @@ class StringMap_string implements ArrayAccess, IteratorAggregate
      *
      * @internal
      */
-    final public function offsetSet($offset, $value)
+    final public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) throw new PushDeniedException;
         if (!is_string($value)) throw new TypeError(self::ValueTypeErrorMessage());
@@ -144,7 +147,7 @@ class StringMap_string implements ArrayAccess, IteratorAggregate
      *
      * @internal
      */
-    final public function offsetUnset($offset)
+    final public function offsetUnset($offset): void
     {
         $this->remove((string)$offset);
     }
@@ -156,6 +159,6 @@ class StringMap_string implements ArrayAccess, IteratorAggregate
      */
     private static function ValueTypeErrorMessage(): string
     {
-        return 'Any values in this collection must be of the type string, called';
+        return 'Any values in this collection must be of the type string';
     }
 }
