@@ -8,9 +8,7 @@ use PHPUnit\Framework\TestCase;
 use TypeError;
 
 
-/**
- * @internal
- */
+/** @internal */
 class ZZZ_StringMap_string_Test extends TestCase
 {
     /** @var StringMap_string */
@@ -19,11 +17,15 @@ class ZZZ_StringMap_string_Test extends TestCase
     public function setUp()
     {
         $this->model = new StringMap_string([
-            'string'  => 'Hello, World!',
-            'integer' => 33 - 4,
-            33 - 4    => 'Integer Key',
-            'array'   => ['This', 'is', 'a', 'pen']
+            'string' => 'Hello, World!',
+            33 - 4   => 'Integer Key',
         ]);
+    }
+
+    public function testInvalidValue()
+    {
+        $this->expectException(TypeError::class);
+        new StringMap_string(['integer' => 33 - 4]);
     }
 
     public function testPush()
@@ -42,8 +44,6 @@ class ZZZ_StringMap_string_Test extends TestCase
     {
         $this->assertTrue($this->model->has('string'));
         $this->assertTrue($this->model->has('29'));
-        $this->assertFalse($this->model->has('integer'));
-        $this->assertFalse($this->model->has('array'));
         $this->assertFalse($this->model->has('something'));
 
         $this->assertEquals('Hello, World!', $this->model->get('string'));

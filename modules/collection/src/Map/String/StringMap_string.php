@@ -30,7 +30,10 @@ class StringMap_string implements ArrayAccess, IteratorAggregate
     public function __construct(array $input)
     {
         $d = [];
-        foreach ($input as $key => $value) if (is_string($value)) $d[$key] = $value;
+        foreach ($input as $key => $value) {
+            if (is_string($value)) $d[$key] = $value;
+            else throw new TypeError(self::ValueTypeErrorMessage());
+        }
         $this->data = $d;
     }
 
