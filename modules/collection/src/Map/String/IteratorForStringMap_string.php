@@ -20,7 +20,7 @@ class IteratorForStringMap_string implements Iterator
     private $delegate;
 
     /**
-     * Iterator_StringMap_string constructor.
+     * IteratorForStringMap_string constructor.
      *
      * @param array $data
      */
